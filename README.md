@@ -10,9 +10,9 @@ Open the **[latest release](https://github.com/AiApply/interview-buddy-releases/
 
 | Your computer | File to download |
 |---|---|
-| Mac with Apple Silicon (M1, M2, M3, M4 or later) | `Interview Buddy-<version>-arm64.dmg` |
-| Mac with an Intel processor | `Interview Buddy-<version>-x64.dmg` |
-| Windows 10 or 11 (64-bit) | `Interview Buddy-<version> Setup.exe` |
+| Mac with Apple Silicon (M1, M2, M3, M4 or later) | `Interview-Buddy-<version>-arm64.dmg` |
+| Mac with an Intel processor | `Interview-Buddy-<version>-x64.dmg` |
+| Windows 10 or 11 (64-bit) | `Interview-Buddy-<version>-win32-x64-Setup.exe` |
 
 Not sure which Mac you have? Choose  → **About This Mac**. "Chip: Apple M…" means Apple Silicon, "Processor: Intel…" means Intel.
 
@@ -36,7 +36,7 @@ The other files in a release (`.zip`, `.nupkg`, `RELEASES`) are used by the app'
 
 ### Windows
 
-1. Run `Interview Buddy-<version> Setup.exe`. It installs and opens the app automatically.
+1. Run `Interview-Buddy-<version>-win32-x64-Setup.exe`. It installs and opens the app automatically.
 2. Sign in with your AIApply account.
 
 Windows SmartScreen may show "Windows protected your PC" for a new release. The installer is signed by AiApply Ltd; choose **More info** → **Run anyway**.
@@ -51,9 +51,9 @@ Every release is code-signed by **AiApply Ltd**. macOS builds are also notarized
 
 ```sh
 # macOS
-shasum -a 256 "Interview Buddy-<version>-arm64.dmg"
+shasum -a 256 "Interview-Buddy-<version>-arm64.dmg"
 # Windows (PowerShell)
-Get-FileHash ".\Interview Buddy-<version> Setup.exe" -Algorithm SHA256
+Get-FileHash ".\Interview-Buddy-<version>-win32-x64-Setup.exe" -Algorithm SHA256
 ```
 
 ## Uninstall
